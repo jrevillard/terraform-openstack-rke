@@ -1,7 +1,6 @@
 resource "openstack_networking_network_v2" "nodes_net" {
   name                  = var.network_name
   admin_state_up        = "true"
-  port_security_enabled = "false"
 }
 
 resource "openstack_networking_subnet_v2" "nodes_subnet" {
